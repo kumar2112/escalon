@@ -63,6 +63,11 @@ $categories=Category::getCategories();
                                   <?php } ?>
                             </select>
                           </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Skills</label>
+                            <div id="evaluate_skills">
+                             </div>
+                          </div>
 
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -71,3 +76,14 @@ $categories=Category::getCategories();
         </div>
     </body>
 </html>
+<script>
+    function evaluateSkills(cateId){
+         $.ajax({
+             url :'ajax/fill_Category.php'
+             type : 'post',
+             success :function(response){
+                  $("#evaluate_skills").html(response);
+             }
+         });
+    }
+</script>
