@@ -30,6 +30,10 @@ Class Skills extends Model {
          }
          return $skills;
      }
+     
+     public function getCategory(){
+          return $this->category;
+     }
 }
 
  ?>
