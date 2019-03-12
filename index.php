@@ -79,8 +79,9 @@ $categories=Category::getCategories();
 <script>
     function evaluateSkills(cateId){
          $.ajax({
-             url :'ajax/fill_Category.php'
+             url :'ajax/fill_Category.php',
              type : 'post',
+             data :  '{cat_id:cateId}',
              success :function(response){
                   $("#evaluate_skills").html(response);
              }
