@@ -19,54 +19,53 @@ $categories=Category::getCategories();
                     <div class="col-md-6 col-md-offset-3">
                        <form>
                           <div class="form-group">
-                           <label for="exampleInputEmail1">First Name</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           <label for="txtFirstName">First Name</label>
+                           <input type="text" class="form-control" id="txtFirstName" name="txtFirstName" aria-describedby="" placeholder="Enter First Name">
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputPassword1">Last Name</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                           <label for="txtLastName">Last Name</label>
+                           <input type="text" class="form-control" id="txtLastName" name="txtLastName" placeholder="Enter Last Name">
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputPassword1">Email</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                           <label for="txtEmail">Email</label>
+                           <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Enter Email">
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputPassword1">Phone</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                           <label for="txtPhone">Phone</label>
+                           <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Enter Phone">
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputEmail1">Street</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           <label for="txtStreet">Street</label>
+                           <input type="text" class="form-control" id="txtStreet" name="txtStreet" aria-describedby="" placeholder="Enter Street">
+                          
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputEmail1">City</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           <label for="txtCity">City</label>
+                           <input type="text" class="form-control" id="txtCity" name="txtCity" aria-describedby="" placeholder="Enter City">
+                           
                           </div>
                           <div class="form-group">
-                           <label for="exampleInputEmail1">Zip</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           <label for="txtZip">Zip</label>
+                           <input type="text" class="form-control" id="txtZip" name="txtZip" aria-describedby="" placeholder="Enter Zip">
+                           
                           </div>
                           <div class="form-group">
-                             <label for="exampleInputEmail1">State</label>
-                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                             <label for="txtState">State</label>
+                             <input type="email" class="form-control" id="txtState" name="txtState" aria-describedby="" placeholder="Enter State">
+                             
                           </div>
                           <div class="form-group">
-                            <label for="exampleFormControlSelect1">Categories</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <label for="selCategory">Categories</label>
+                            <select class="form-control" id="selCategory" name="selCategory">
                                   <?php foreach ($categories as $cat){ ?>
                                       <option value="<?php echo $cat->getId() ?>"><?php echo $cat->categoryName ?></option>
                                   <?php } ?>
                             </select>
                           </div>
                           <div class="form-group">
-                            <label for="exampleFormControlSelect1">Skills</label>
+                            <label>Skills</label>
                             <div id="evaluate_skills">
-                             </div>
+                            </div>
                           </div>
 
                           <button type="submit" class="btn btn-primary">Submit</button>
