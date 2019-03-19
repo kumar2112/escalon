@@ -1,9 +1,10 @@
 <?php 
-   require_once 'Model/Skills.php';
+   include_once "../config.php";
+   require_once root.'model/Skills.php';
    $category_id=$_POST['cat_id'];
    $skills=Skills::getSkillByCategory($category_id);
    
-   $html='<div class='row'>';
+   $html="<div class='row'>";
    $i=0;
    foreach($skills as $skill){
         
